@@ -28,6 +28,8 @@
 
 body{
     background-color: rgb(41, 41, 41);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 h1{
@@ -42,71 +44,76 @@ h2{
     font-weight: 400;
 }
 
-nav{
- background-color: #480101;
- width: 100%;
- height: 90px;
- padding: 18px 20px 18px 35px;
- position: sticky;
- left: 0;
- top: 0;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- z-index: 10;
+/* ----- Start css nav ----- */
+
+.botonera {
+    background-color: #480101;
 }
 
-    nav img{
-        width: 250px;
-    }
+.botonera img{
+    width: 240px;
+    margin: 10px 0;
+}
 
-        nav ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            margin-right: 20px;
-        } 
+.botonera ul li{ 
+    margin-right: 12px;
+}
 
-        nav ul li{ 
-            margin-right: 20px;
-        }
+.botonera ul li a {
+    text-decoration: none;
+    color: #EFE0C0;
+    font-size: 1em;
+    font-family: Butler;
+    font-weight: 600;
+    transition: color .3s;
+}
 
-            nav ul li a {
-                text-decoration: none;
-                color: #EFE0C0;
-                font-size: 1em;
-                font-family: Butler;
-                font-weight: 600;
-                transition: color .3s;
-            }
-                nav ul li a:hover {
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: #cbb27c;
-                    font-size: 1em;
-                    font-family: Butler;
-                    font-weight: 600;
-                    transition: color .3s;
-            
-                }
+.botonera ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #cbb27c;
+    font-size: 1em;
+    font-family: Butler;
+    font-weight: 600;
+    transition: color .3s;
+}
 
-                nav div {
-                    height: auto;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                }
+.botonera svg {
+    fill: #EFE0C0;
+    border: none;
+}
+
+.icons-svg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+} 
+
+.icons-svg img{
+    height: auto;
+    width: 20px;
+    margin-right: 15px;
+    justify-content: center;
+}
+
+.btn-burger {
+    border: none;
+}
+
+.position-nav{
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;
+}
+
+.position-header{
+    padding-top: 85px;
+}
 
 
-                nav div a img {
-                    height: auto;
-                    width: 25px;
-                    margin-right: 20px;
-                    display: flex;
-                    align-items: center;
-                }
+/* ----- end css nav ----- */
 
 header img{
     width: 100%;
@@ -139,6 +146,7 @@ footer div ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 footer ul li a{
@@ -167,17 +175,22 @@ footer div a img {
 footer p{
     text-align: center;
     color: #EFE0C0;
-    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
 }
+
+.iconsfooter {
+    margin-top: 7px;
+}
+
 
 /* ----- css header ----- */
 
 .container-header{ 
     width: 100vw;
-    height: 800px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -203,7 +216,7 @@ footer p{
 .background-layer{
     background-color: rgba(0,0,0,.5);
     width: 100%;
-    height: 800px;
+    height: 100vh;
     position: absolute;
     top:0;
     margin: 0;
@@ -227,6 +240,7 @@ footer p{
     margin-bottom: .3em;
     text-align: center;
     color: #EFE0C0;
+    margin-bottom: 0px;
 
 }
 
@@ -243,6 +257,7 @@ footer p{
     font-size: 1.5em;
     color: #EFE0C0;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .text-medium1 {
@@ -260,6 +275,10 @@ footer p{
     height: auto;
     margin: 10% 7% 10% 7%;
     padding: 0 13% 0 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-servicios {
@@ -276,10 +295,10 @@ footer p{
 .containerimg {
     width: 50%;
     height: auto;
-    overflow:auto;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .containerimg img{
@@ -324,11 +343,42 @@ footer p{
     transition: background-color .3s;
 }
 
-.text-button{
+.menu-button{
+    background-color: #EFE0C0;
+    color: #111111;
+    border-radius: 100px;
+    margin-right: 25px;
+    transition: background-color .3s;
+    padding: 10px 40px;
+    border: none;
+
+}
+
+.menu-button:hover {
+    background-color: #c3a25a;
+    color: #111111;
+    border-radius: 100px;
+    margin-right: 25px;
+    transition: background-color .3s;
+    padding: 10px 40px;
+    border: none;
+}
+
+.text-button {
     text-decoration: none;
     color: #111111;
     font-family: Butler;
     font-weight: 600;
+    text-align: center;
+    line-height: 18px;
+}
+.text-button:hover {
+    text-decoration: none;
+    color: #111111;
+    font-family: Butler;
+    font-weight: 600;
+    text-align: center;
+    line-height: 18px;
 }
 
 /* ----- end css main ----- */
@@ -337,7 +387,7 @@ footer p{
 
 .container-header-img-pages{
     width: 100%;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -347,7 +397,7 @@ footer p{
 }
 
 .container-header-pages{
-    margin: 4% 4% 4% 4%;
+    margin: 3.5% 10% 0% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,13 +412,59 @@ footer p{
     font-size: 1.2em;
 }
 
-.container-header-pages p{
-    margin-top: 20px;
+.container-menu div{
+    overflow: hidden;
+    background-color: #111111;
+    border: none;
+    color: #cbb27c;
+    font-family: Butler;
+    text-align: center;
+    margin: 5%;
+    border-radius: 20px;
+}
+
+.container-menu h2{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.container-menu p{
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.container-menu a{
+    font-size: 1em;
+    font-weight: 600;
+    color: #cbb27c;
+    background-color: #480101;
+    border: none;
+    width: 100%;
+    transition: background-color .5s;
+    border-radius: 100px;
+}
+
+.container-menu a:hover{
+    font-size: 1em;
+    font-weight: 600;
+    color: #cbb27c;
+    background-color: #2b0000;
+    border: none;
+    width: 100%;
+    transition: background-color .5s;
+    border-radius: 100px;
+}
+
+.container-menu-buttons{
+    padding: 2% 0% 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
 }
 
 /* ----- css contacto ----- */
 
-.container-button2{
+.container-button2 {
     /* border: 1px solid #EFE0C0; */
     background-color: #EFE0C0;
     border-radius: 100px;
@@ -436,3 +532,237 @@ form label{
 }
 
 /* ----- end css contacto ----- */
+
+/* ----- start mobile css responsive ----- */
+
+/* ----- Tablets Media ----- */
+
+@media (width < 1024px) {
+    .container-servicios {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111111;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .containerimg {
+        width: auto;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .container-content-servicios {
+        margin: 15% 7% 15% 7%;
+        padding: 0 10% 0 10%;
+        width: auto;
+    }
+    
+    .container-menu-buttons {
+        padding: 3% 0% 2% 3%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: auto;
+    }
+
+        .text-header {
+            font-size: 5em !important;
+        }
+
+        .container-100 {
+            margin: 15% 7% 15% 7%;
+        }
+
+        footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 30px 0;
+        }
+
+        footer div {
+            margin-top: 20px;
+        }
+
+        footer div ul {
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0px;
+        }
+        footer ul li a {
+            margin-right: 0px;
+        }
+
+        footer ul li {
+            margin-top: 10px;
+        }
+
+        footer p{
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .iconsfooter {
+            margin-top: 10px;
+        }
+
+        .container-header-pages {
+            margin: 5% 10% 4% 10%;
+        }
+
+        .container-header-pages h1 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .text-p1{
+            font-size: 1.2em;
+        }
+
+        .buttons-burguer{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .buttons-burguer a{
+            border-bottom: 1px solid #2b0000;
+            width: 350px;
+            margin-bottom: 15px;
+        }
+}
+
+/* ----- Mobile Medias ----- */
+
+@media (width < 430px) {
+    .container-servicios {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111111;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .containerimg {
+        width: auto;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .containerimg img{
+        width: 550px;
+        height: auto;
+    }
+
+    .container-content-servicios {
+        margin: 20% 7% 20% 7%;
+        padding: 0 10% 0 10%;
+        width: auto;
+    }
+    
+    .container-header img { 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .container-100{
+        padding: 0 10% 0 10%;
+        margin: 25% 7% 25% 7%;
+    }    
+
+        .text-header {
+            font-size: 4em !important;
+            margin: 20% 0 0 10% !important;
+        }
+
+        .text-h2 {
+            font-size: 2em;
+        }
+
+        .text-p1{
+            font-size: 1.2em;
+        }
+
+        footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px 30px 30px;
+        }
+
+        footer div {
+            margin-top: 20px;
+        }
+
+        footer div ul {
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0px;
+        }
+        footer ul li a {
+            margin-right: 0px;
+        }
+
+        footer ul li {
+            margin-top: 10px;
+        }
+
+        footer p{
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .container-header-img-pages {
+            height: 150px;
+        }
+
+        .container-header-pages p {
+            margin-top: 0px;
+        }
+        
+        .container-header-pages h1 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .container-header-pages {
+            margin: 5% 10% 4% 10%;
+        }
+
+    .container-menu-buttons {
+        padding: 5% 0% 3% 3%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: auto;
+    }
+
+    .iconsfooter {
+        margin-top: 10px;
+    }
+
+    .buttons-burguer{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .buttons-burguer a{
+        border-bottom: 1px solid #2b0000;
+        width: 350px;
+        margin-bottom: 15px;
+    }
+}
