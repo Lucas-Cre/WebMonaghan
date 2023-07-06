@@ -412,6 +412,10 @@ footer p{
     font-size: 1.2em;
 }
 
+.container-menu {
+    margin: 0 10%;
+}
+
 .container-menu div{
     overflow: hidden;
     background-color: #111111;
@@ -636,6 +640,10 @@ form label{
             width: 350px;
             margin-bottom: 15px;
         }
+
+        .container-menu {
+            margin: 0 5% !important;
+        }
 }
 
 /* ----- Mobile Medias ----- */
@@ -764,5 +772,11 @@ form label{
         border-bottom: 1px solid #2b0000;
         width: 350px;
         margin-bottom: 15px;
+    }
+}
+
+@media (width < 1280px) {
+    .container-menu {
+        margin: 0 7%;
     }
 }
