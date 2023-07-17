@@ -1,0 +1,30 @@
+// partials
+@font-face {
+    font-family: 'Butler Regular';
+    src: url('../fonts/Butler_Regular.otf') format('otf'),
+    font-style normal;
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'Butler Medium';
+    src: url('../fonts/Butler_Medium.otf') format('otf')
+    font-style normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Butler Bold';
+    src: url('../fonts/Butler_Black.otf') format('otf'),
+    font-style normal;
+    font-weight: 600; 
+  }
+@import "_vars";
+@import "_mixins";
+@import "_commons";
+@import "_nav";
+@import "_index";
+@import "_menu";
+@import "_pages";
+@import "_mediaquerys";
+@import "_footer";

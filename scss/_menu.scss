@@ -1,0 +1,53 @@
+/* ----- start css menu ----- */
+.container-menu {
+    margin: 0 10%;
+
+    div{
+        overflow: hidden;
+        background-color: $darkGrey;
+        border: none;
+        color: $txtSecond;
+        font-family: $MainFont;
+        text-align: $txtCenter;
+        margin: 5%;
+        border-radius: 20px;
+    }
+
+    h2{
+        font-size: $txtM;
+        font-weight: $TxtBold;
+    }
+
+    p{
+        font-size: $txtXS;
+        font-weight: $TxtReg;
+    }
+
+    a{
+        font-size: $txtS;
+        font-weight: $TxtBold;
+        color: $txtColor;
+        background-color: #480101;
+        border: none;
+        width: 100%;
+        transition: background-color .5s;
+        border-radius: 100px;
+
+        &:hover{
+            font-size: $txtS;
+            font-weight: $TxtBold;
+            color: $txtColor;
+            background-color: #700000 !important;
+            border: none;
+            width: 100%;
+            transition: background-color .5s;
+            border-radius: 100px;
+        }
+    }
+}
+
+.container-menu-buttons{
+    padding: 2% 0% 1% 0%;
+    @include flex-1(center,center);
+    overflow-x: auto;
+}

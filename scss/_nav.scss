@@ -1,0 +1,62 @@
+.botonera {
+    background-color: $mainColor;
+
+    img{
+        width: 240px;
+        margin: 10px 0;
+    }
+
+    ul{
+        li{
+        margin-right: 12px;
+
+            a{
+            text-decoration: none;
+            color: $txtColor;
+            font-size: 1em;
+            font-family: $MainFont;
+            font-weight: $TxtBold;
+            transition: color .3s;
+            }
+                &:hover{
+                cursor: pointer;
+                text-decoration: none;
+                color: $txtSecond;
+                font-size: 1em;
+                font-family: $MainFont;
+                font-weight: $TxtBold;
+                transition: color .3s;
+                }
+        }
+    }
+    svg{
+        fill: $txtColor;
+        border: none;
+    }
+}
+
+.icons-svg{
+    @include flex-dire (row,center, center);
+    margin-bottom: 15px;
+
+    img{
+        height: auto;
+        width: 20px;
+        margin-right: 15px;
+        justify-content: center;
+    }
+}
+
+.btn-burger {
+    border: none;
+}
+
+.position-nav{
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;
+}
+
+.position-header{
+    padding-top: 85px;
+}

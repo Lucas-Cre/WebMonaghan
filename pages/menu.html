@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Luxury WineExperience</title>
+    <meta name="description" content="Club Monaghan, un sitio dedicado al universo del vino y afines cuenta con una enoteca de lujo en el corazón de Puerto Norte, además cocteleria de autor y el mejor café de especialidad.">
+    <meta name="keywords" content="vino, cava, bar de vinos, winebar, enoteca, cafeteria, cocteleria, pasteleria, cafe de especialidad, bebidas">
+    <meta name="copyright" content="Todos los derechos reservados. Club Monaghan 2023">
+    <title>Club Monaghan - Coctelría</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Link css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+     <!-- Link css animations -->
+     <link rel="stylesheet" href="../css/animate.css">
 </head>
 
 <!-- ends head -->
@@ -63,9 +68,6 @@
    <!-- ends nav -->
    
     <header class="position-header">
-            <!-- <div class="container-header-img-pages">
-                <img src="../img/_OTO8576.jpeg" alt="Cava subterránea Monaghan">
-            </div> -->
             <div class="container-header-pages">
                 <h1 class="text-h1">Conocé todo nuestro menú
                 </h1>
@@ -78,71 +80,215 @@
     <main>
         <div class="container-menu-buttons">
             <a class="text-button menu-button" href="../pages/menu.html">Coctelería Clásica</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Coctelería de autor</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Tapas Calientes</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Tapas Frías</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Cafetería</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Patelería</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Bebidas</a>
-            <a class="text-button menu-button" href="../pages/menu.html">Tragos sin alcohol</a>
+            <!-- <a class="text-button menu-button" href="../pages/menu.html">Coctelería de autor</a> -->
+            <a class="text-button menu-button" href="../pages/tapasfrias.html">Tapas Frías</a>
+            <a class="text-button menu-button" href="../pages/tapascalientes.html">Tapas Calientes</a>
+            <a class="text-button menu-button" href="../pages/cafeteria.html">Cafetería</a>
         </div>
-            <Section class="row container-menu">
+            <Section class="row container-menu wow fadeInUp" data-wow-duration="1.5s">
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/CynarJulep2.jpg" class="card-img-top" alt="Cocktail Cynar Julep">
                             <div class="card-body">
                             <h2 class="card-title">Cynar Julep</h2>
                             <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
-                            <a href="" class="btn btn-primary">$1650</a>
+                            <a href="" class="btn btn-primary">$1050</a>
                             </div>
                         </div>
                     </figure>
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/GinTonic2.jpg" class="card-img-top" alt="Cocktail Gin Tonic">
                             <div class="card-body">
-                            <h2 class="card-title">Cynar Julep</h2>
-                            <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
-                            <a href="" class="btn btn-primary">$2000</a>
+                            <h2 class="card-title">Gin Tonic Monaghan</h2>
+                            <p class="card-text">Pedilo con Lima y menta, albahaca y naranja, tomillo y limón, romero y mandarina.<br>
+                                Gin tonic Apostoles $1050
+                                <br>
+                                Gin tonicTanqueray $1350
+                                <br>
+                                Gin tonic Beefeater $1350
+                                <br>
+                                Gin tonic Bombay $1800</p>
+                            <a href="" class="btn btn-primary">$1200</a>
                             </div>
                         </div>
                     </figure>
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/CampariTonic.jpg " class="card-img-top" alt="Cocktail Campari">
                             <div class="card-body">
-                            <h2 class="card-title">Cynar Julep</h2>
-                            <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
+                            <h2 class="card-title">Campari ó Punt e Mes</h2>
+                            <p class="card-text">Aperitivo, agua tónica y rodajas de cítricos.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Mojito2.jpg" class="card-img-top" alt="Cocktail Mojito">
+                            <div class="card-body">
+                            <h2 class="card-title">Mojito</h2>
+                            <p class="card-text">Jugo de limón, almibar simple, menta, ron blanco, soda.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Caipirinha.jpg" class="card-img-top" alt="Cocktail Caipirinha o Caiporiska">
+                            <div class="card-body">
+                            <h2 class="card-title">Caipirinha o Caipiroska</h2>
+                            <p class="card-text">Gajos de lima, azúcar, cachaça o vodka.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Daiquiri-2.jpg" class="card-img-top" alt="Cocktail Daiquiri Original">
+                            <div class="card-body">
+                            <h2 class="card-title">Daiquiri Original</h2>
+                            <p class="card-text">Jugo de lima, azúcar, Ron Blanco, batido.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Negroni2.jpeg" class="card-img-top" alt="Cocktail Negroni">
+                            <div class="card-body">
+                            <h2 class="card-title">Negroni</h2>
+                            <p class="card-text">London Dry Gin, Campari, Vermouth Rosso, rodaja de naranja.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Spritz2.jpg" class="card-img-top" alt="Cocktail Aperol Spritz">
+                            <div class="card-body">
+                            <h2 class="card-title">Aperol Spritz</h2>
+                            <p class="card-text">De Cynar y aceitunas, Campari y rodajas de limón o Aperol, espumante y rodaja de naranja.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Margarita.jpg" class="card-img-top" alt="Cocktail Margarita">
+                            <div class="card-body">
+                            <h2 class="card-title">Margarita</h2>
+                            <p class="card-text">Jugo de limón, Tequila Blanco, Triple Sec Aniapa, corona de sal entrefina.</p>
+                            <a href="" class="btn btn-primary">$1400</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Gimlet.jpg" class="card-img-top" alt="Cocktail Gimlet">
+                            <div class="card-body">
+                            <h2 class="card-title">Gimlet</h2>
+                            <p class="card-text">Jugo de lima, azúcar, London Dry Gin.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/DryMartini2.jpg" class="card-img-top" alt="Cocktail Dry Martini">
+                            <div class="card-body">
+                            <h2 class="card-title">Dry Martinin</h2>
+                            <p class="card-text">London Dry Gin, Vermouth Dry, aceituna.</p>
+                            <a href="" class="btn btn-primary">$1300</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Manhattan2.jpg" class="card-img-top" alt="Cocktail Manhattan">
+                            <div class="card-body">
+                            <h2 class="card-title">Manhattan</h2>
+                            <p class="card-text">Whiskey Bourbon, Vermouth Rosso, Bitter Angostura, cereza y piel de naranja.</p>
+                            <a href="" class="btn btn-primary">$1450</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/MilanoTorino.jpg" class="card-img-top" alt="Cocktail Milano Torino">
+                            <div class="card-body">
+                            <h2 class="card-title">Milano Torino</h2>
+                            <p class="card-text">Bitter italiano, vermú rojo y una rodaja de naranja.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/BrandyCrusta2.jpg" class="card-img-top" alt="Cocktail Brandy Crusta">
+                            <div class="card-body">
+                            <h2 class="card-title">Brandy Crusta</h2>
+                            <p class="card-text">Jugo de limón, almíbar simple, Brandy, Triple Sec Aniapa y Bitter Angostura.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/OldFashioned.jpg" class="card-img-top" alt="Cocktail Old Fashioned">
+                            <div class="card-body">
+                            <h2 class="card-title">Old Fashioned</h2>
+                            <p class="card-text">Azúcar, Bitter Angostura, Whiskey Bourbon, rodaja de naranja.</p>
                             <a href="" class="btn btn-primary">$1500</a>
                             </div>
                         </div>
                     </figure>
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/TomCollins2.jpg" class="card-img-top" alt="Cocktail Tom Collins">
                             <div class="card-body">
-                            <h2 class="card-title">Cynar Julep</h2>
-                            <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
-                            <a href="" class="btn btn-primary">$1100</a>
+                            <h2 class="card-title">Tom Collins</h2>
+                            <p class="card-text">Azúcar, jugo de limón, London Dry Gin, soda, cereza y rodaja de limón.</p>
+                            <a href="" class="btn btn-primary">$1050</a>
                             </div>
                         </div>
                     </figure>
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/DaiquiriPinot2.jpg" class="card-img-top" alt="Cocktail Daiquiro de pinot">
                             <div class="card-body">
-                            <h2 class="card-title">Cynar Julep</h2>
-                            <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
-                            <a href="" class="btn btn-primary">$1100</a>
+                            <h2 class="card-title">Daiquiri de pinot</h2>
+                            <p class="card-text">Jugo de lima, azúcar, Ron Blanco, Pinot Noir, dash de Cherry Brandy Golden Age.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
                             </div>
                         </div>
                     </figure>
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img src="../img/Cynar.jpg" class="card-img-top" alt="Cynar Julep">
+                            <img src="../img/cocktails/CaratulaFotos.jpg" class="card-img-top" alt="Cocktail Mojito de Chardonnay">
                             <div class="card-body">
-                            <h2 class="card-title">Cynar Julep</h2>
-                            <p class="card-text">Menta, almíbar simple, jugo de limón, Cynar y Schweppes Citrus.</p>
+                            <h2 class="card-title">Mojito de Chardonnay</h2>
+                            <p class="card-text">Menta, almíbar simple, jugo de limón, Chardonnay, Ron blanco, soda.</p>
+                            <a href="" class="btn btn-primary">$1500</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/Sangria.jpg" class="card-img-top" alt="Cocktail Sangría Monaghan">
+                            <div class="card-body">
+                            <h2 class="card-title">Sangría Monaghan</h2>
+                            <p class="card-text">Jugo de naranja, Pinot Noir, Cherry Brandy Golden Age, Vermouth Bianco, rodaja de limón y de naranja.Jugo de naranja, Pinot Noir, Cherry Brandy Golden Age, Vermouth Bianco, rodaja de limón y de naranja.</p>
+                            <a href="" class="btn btn-primary">$1200</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../img/cocktails/PisoSour.jpg" class="card-img-top" alt="Cocktail Pisco Sour">
+                            <div class="card-body">
+                            <h2 class="card-title">Pisco Sour</h2>
+                            <p class="card-text">Azúcar, clara de huevo, jugo de limón, Pisco Peruano. </p>
                             <a href="" class="btn btn-primary">$1100</a>
                             </div>
                         </div>
@@ -198,6 +344,12 @@
 <!-- ends footer -->
 
 <!-- ends footer -->
+<!-- Script BS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- Script WOW animations -->
+<script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

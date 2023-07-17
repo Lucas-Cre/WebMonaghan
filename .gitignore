@@ -2,4 +2,4 @@
 *.map
 *.vscode
 *.ar
-node_module/
+node_modules/

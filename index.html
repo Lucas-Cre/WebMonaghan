@@ -9,7 +9,9 @@
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Link css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Link css animations -->
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
     <!-- ends head -->
@@ -62,13 +64,13 @@
   
   <!-- ends nav -->
 
-    <header class="position-header">
+    <header class="position-header wow fadeInUp">
         <section class="container-header">
             <div>
                 <img src="./img/OTO8576.jpeg" alt="Cava subterránea Monaghan">
             </div>
                     <div>
-                        <h1 class="text-header">A Luxury Wine <br> Experience</h1>
+                        <h1 class="text-header wow fadeInLeftBig" data-wow-delay=".1s">A Luxury Wine <br> Experience</h1>
                     </div>
                     <div class="background-layer"> </div>
          </section>
@@ -77,22 +79,22 @@
     <!-- ends header -->
 
     <main>
-        <section class="container-100">
-            <h2 class="text-h2">Una experiencia diferente <br> en Puerto Norte</h2>
+        <section class="container-100 wow fadeInLeftBig" data-wow-delay=".15s">
+            <h2 class="text-h1">Una experiencia diferente <br> en Puerto Norte</h2>
             <p class="text-p1">Amplio portfolio de etiquetas y otros artículos vinculados al vino y bebidas espirituosas. Le ofrecemos asesoramiento profesional y personalizado, en un espacio exclusivo donde puede conocer, encontrar y disfrutar la experiencia del buen vivir vinculado al mundo del vino.</p>
         </section>
                 <section class="container-servicios">
-                    <div class="containerimg"> <img src="./img/OTO8588.jpeg" alt="Meson Cava Monaghan"> </div>
+                    <div class="containerimg wow fadeIn" data-wow-delay=".5s"> <img src="./img/OTO8588.jpeg" alt="Meson Cava Monaghan"> </div>
                         <div class="container-content-servicios">
-                            <h2 class="text-h2">Servicios empresariales</h2>
-                            <p class="text-p1">Club Monaghan brinda un servicio completo, para reuniones privadas y corporativas en nuestra exclusiva Cava de lujo. Realizamos catas, descorches, degustaciones, talleres, ferias de vinos y eventos. Servicio de catas guiadas para grupos reducidos y privados.</p>
-                                <div class="container-button">
+                            <h2 class="text-h1 wow fadeInUp" data-wow-delay=".7s">Servicios empresariales</h2>
+                            <p class="text-p1 wow fadeInUp" data-wow-delay=".7s">Club Monaghan brinda un servicio completo, para reuniones privadas y corporativas en nuestra exclusiva Cava de lujo. Realizamos catas, descorches, degustaciones, talleres, ferias de vinos y eventos. Servicio de catas guiadas para grupos reducidos y privados.</p>
+                                <div class="container-button wow fadeIn">
                                 <a class="text-button" href="./pages/servicios.html">+ Info</a>
                                 </div>
                         </div>
                 </section>
-                    <section class="container-100">
-                        <h2 class="text-h2">Conocé nuestro espacio</h2>
+                    <section class="container-100 wow fadeInLeftBig" data-wow-delay=".6s">
+                        <h2 class="text-h1">Conocé nuestro espacio</h2>
                         <p class="text-p1">Espacio para compartir en reducidos grupos de hasta 16 personas la experiencia de encontrarse con la degustación de etiquetas exclusivas y Experiencias Únicas.<br>Estación deli con productos premium para acompañar el maridaje de nuestras etiquetas o simplemente para disfrutarlos en diferentes momentos y ocasiones.
                         </p>
                         </section>      
@@ -147,6 +149,11 @@
 
 <!-- Script Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- Script WOW animations -->
+<script src="./js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 </body>
 </html>

@@ -1,0 +1,139 @@
+/* ----- Universal slectors ----- */
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    box-sizing: border-box;
+}  
+
+body{
+    background-color:$bgColor;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1{
+    color: $txtColor;
+    font-family: $MainFont;
+    font-weight:$TxtBold;
+}
+
+h2{
+    color: $txtColor;
+    font-family: $MainFont;
+    font-weight:$TxtMed;
+}
+
+p{
+    color: $txtColor;
+    font-family: $MainFont;
+    font-weight:$TxtReg;
+}
+
+/* ----- Texts generales ----- */
+
+.text-h1{
+    font-size: $txtXL;
+    margin-bottom: .3em;
+    text-align: $txtCenter;
+    margin-bottom: 0px;
+    font-weight: $TxtBold;
+
+}
+
+.text-h2{
+    font-size: $txtM;
+    font-weight: $TxtBold;
+    margin-bottom: .3em;
+    text-align: $txtCenter;
+}
+
+.text-p1 {
+    font-size: $txtS;
+    text-align: $txtCenter;
+    margin-bottom: 0px;
+}
+
+.text-medium1 {
+    color: $txtColor;
+    font-family: $MainFont;
+    font-weight: $TxtMed;
+    font-size: $txtXS;
+    text-align: $txtCenter;
+}
+
+/* ----- buttons generales ----- */
+
+.container-button {
+    background-color:$txtColor;
+    border-radius: 100px;
+    width: 150px;
+    height: 44px;
+    margin-top: 5%;
+    @include flex-1(center,center);
+    transition: background-color .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $txtSecond;
+        border-radius: 100px;
+        width: 150px;
+        height: 44px;
+        margin-top: 5%;
+        @include flex-1(center,center);
+        transition: background-color .3s;
+    }
+}
+
+.menu-button{
+    background-color:$txtColor;
+    color: $blackColor;
+    border-radius: 100px;
+    margin-right: 25px;
+    transition: background-color .3s;
+    padding: 10px 40px;
+    border: none;
+    &:hover {
+        background-color:$txtSecond;
+        color: $blackColor;
+        border-radius: 100px;
+        margin-right: 25px;
+        transition: background-color .3s;
+        padding: 10px 40px;
+        border: none;
+    }
+}
+
+.text-button {
+    text-decoration: none;
+    color: $blackColor;
+    font-family: $MainFont;
+    font-weight: $TxtBold;
+    text-align: $txtCenter;
+    font-size: $txtXXS;
+
+    &:hover {
+        text-decoration: none;
+        color: $WhiteColor;
+        font-family: $MainFont;
+        font-weight: $TxtBold;
+        text-align: $txtCenter;
+        font-size: $txtXXS;
+    }
+}
+
+/* ----- Containers pages ----- */
+
+.container-header-pages {
+    margin: 3.5% 10% 3% 10%;
+    @include flex-dire (column,center, center);
+    
+    a{
+        text-decoration: none;
+        color: $darkGrey;
+        font-weight: $TxtBold;
+        font-family: $MainFont;
+        font-size: $txtXS;
+        margin-top: 4px;
+    }
+}

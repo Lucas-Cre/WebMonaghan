@@ -1,0 +1,18 @@
+@mixin flex-1 ($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items:$align;
+}
+
+@mixin flex-dire ($dire,$justify,$align){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items:$align;
+}
+
+@mixin flex-align ($dire,$align){
+    display: flex;
+    flex-direction: $dire;
+    align-items:$align;
+}

@@ -1,0 +1,114 @@
+footer {
+    background-color: $mainColor;
+    font-family: $MainFont;
+    font-weight: $TxtMed;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    div{
+        width: 100%;
+        @include flex-dire(row,center,center);
+        margin-top: 25px;
+    }
+    div ul{
+        width: 100%;
+        list-style: none;
+      @include flex-dire(row,center,center);
+        margin-bottom: 0px;
+    }
+    ul{
+        li a{
+            text-decoration: none;
+            color:$txtColor;
+            margin-right: 30px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:$txtColor;
+        transition: color .3s;
+        text-align: center;
+        &:hover{
+            color: $txtSecond;
+            transition: color .3s;
+        }
+    }
+    div a img {
+        width: 25px;
+        margin-right: 20px;
+    }
+    p{
+        text-align: center;
+        color: $txtColor;
+        @include flex-1(center,center);
+        margin-bottom: 0px;
+    }
+}
+
+.iconsfooter {
+    margin-top: 7px;
+}
+
+/* ----- footer Tablets Media ----- */
+
+@media (width < 1024px) {
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 30px 0;
+    div {
+        margin-top: 20px;
+        ul {
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0px;
+            li {
+                margin-top: 10px;
+                a {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    p{
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+}
+}
+
+/* ----- footer Mobile Medias ----- */
+
+@media (width < 430px) {
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px 30px 30px;
+        div {
+            margin-top: 20px;
+            ul {
+                flex-direction: column;
+                padding-left: 0;
+                margin-bottom: 0px;
+                li {
+                    margin-top: 10px;
+                    a {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        p{
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    }
+    }

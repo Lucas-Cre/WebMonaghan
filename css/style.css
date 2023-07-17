@@ -27,7 +27,7 @@
 }  
 
 body{
-    background-color: rgb(41, 41, 41);
+    background-color: #292929;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -317,7 +317,6 @@ footer p{
 }
 
 .container-button{
-    /* border: 1px solid #EFE0C0; */
     background-color: #EFE0C0;
     border-radius: 100px;
     width: 150px;
@@ -370,29 +369,29 @@ footer p{
     font-family: Butler;
     font-weight: 600;
     text-align: center;
-    line-height: 18px;
+    font-size: 1em;
 }
 .text-button:hover {
     text-decoration: none;
-    color: #111111;
+    color: #FFFFFF;
     font-family: Butler;
     font-weight: 600;
     text-align: center;
-    line-height: 18px;
+    font-size: 1em;
 }
 
 /* ----- end css main ----- */
 
 /* ----- css pages ----- */
 
-.container-header-img-pages{
+.container-header-img-pages {
     width: 100%;
     height: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -517,16 +516,13 @@ footer p{
 
 .container-form label{
     margin-top: 15px;
+    color: #EFE0C0;
+    font-family: Butler;
+    font-size: 1.1em;
 }
 
 .margin-inpunt-form{
     margin-top: 15px;
-}
-
-form label{
-    color: #EFE0C0;
-    font-family: Butler;
-    font-size: 1.1em;
 }
 
 .container-map {
