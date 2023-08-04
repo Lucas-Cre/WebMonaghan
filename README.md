@@ -5,5 +5,7 @@ Comencé este curso ya que soy diseñador gráfico y siempre me apasionó el dis
 El proyecto está realizado en HTML5 y CSS. Se agregó en framework Bootstrap para agregar funcionalidades y elementos interactivos. Se utilizó SASS para mejorar y organizar el estilo de la pagina y optimizar el CSS del sitio. Se realizó el control de versiones en Github actualizando el commit en cada etapa del proyecto.
 
 link a repositorio de github https://github.com/Lucas-Cre/WebMonaghan
+
 link a deplot de git hub https://lucas-cre.github.io/WebMonaghan/
+
 link a servidor Vercel https://web-monaghan.vercel.app/index.html
