@@ -467,6 +467,34 @@ p {
 }
 
 /* ----- end css contacto ----- */
+/* ----- css error 404 ----- */
+.container-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-error img {
+  width: 300px;
+}
+.container-error h1 {
+  margin-bottom: 0px;
+  font-size: 12em;
+  color: #cbb27c;
+  font-weight: 600;
+}
+.container-error h2 {
+  margin-bottom: 0px;
+  font-size: 3em;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.container-error p {
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
+
 /* ----- Tablets Media ----- */
 @media (width < 1024px) {
   .container-servicios {

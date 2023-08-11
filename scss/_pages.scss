@@ -103,3 +103,32 @@
 }
 
 /* ----- end css contacto ----- */
+
+/* ----- css error 404 ----- */
+.container-error{
+    @include flex-dire(column,center,center);
+    height: 100vh;
+
+    img{
+        width: 300px;
+    }
+
+    h1{
+        margin-bottom: 0px;
+        font-size:12em;
+        color: $txtSecond;
+        font-weight: $TxtBold;
+    }
+
+    h2{
+        margin-bottom: 0px;
+        font-size:$txtXL;
+        color: $WhiteColor;
+        font-weight: $TxtMed;
+    }
+
+        p{
+            margin-bottom: 0px;
+            color: $WhiteColor;
+        }
+}
